@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "422822561938",
+    "firebase_url": "https://smap-7836a.firebaseio.com",
+    "project_id": "smap-7836a",
+    "storage_bucket": "smap-7836a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422822561938:android:bacf5f7888817fd5",
+        "android_client_info": {
+          "package_name": "com.kong.lutech.apartment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422822561938-sub80g8pnrr0aslto54ao1qcohecp6c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJZnoa_ML2Thuh660p2IUGyDAgcXY5SeY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTopContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#adb1b8">
+
+            <com.kong.lutech.apartment.view.ZoomableImageView
+                android:id="@+id/ivParkingLot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/llParkingLotInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:background="#CCFFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvParkingLot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:text="선호 주차구역이 없습니다"
+                    android:textColor="@color/primaryText"
+                    android:fontFamily="@font/notosans_medium"
+                    android:textSize="14dp"/>
+
+                <Button
+                    android:id="@+id/btnParkingLotSetting"
+                    android:theme="@style/AquaMarineButton"
+                    android:fontFamily="@font/notosans_medium"
+                    android:background="@drawable/drawable_button_accent_4"
+                    android:stateListAnimator="@null"
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="주차구역 설정" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llParkingLotEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/llParkingLotInfo"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/parking_big"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:text="선호 주차 구역 없음"
+                    android:fontFamily="@font/notosans_bold"/>
+                
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpParkingCar"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginTop="6dp"
+                android:clipToPadding="false"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+            
+            <com.kong.lutech.apartment.view.CircleIndicator
+                android:id="@+id/clIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:srl_direction="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llNoneCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="58dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_carhistory_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="등록 차량 없음"
+                android:textColor="@color/silver"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="등록된 차량이 없습니다"
+                android:textColor="@color/silver"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listParking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:clipToPadding="false"
+            android:paddingTop="10dp" />
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>-->
+</FrameLayout>

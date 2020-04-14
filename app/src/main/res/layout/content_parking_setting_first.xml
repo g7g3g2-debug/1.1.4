@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kongtech.lutech.apartment.com.kong.lutech.apartment.ui.parking.setting.ParkingSettingFirstActivity"
+    tools:showIn="@layout/activity_parking_setting_first">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/notosans_medium"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="@color/primaryText"
+            android:text="주차장 선택"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerParkingLot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_login_background"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight='8dp'
+                android:layout_gravity="right|center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_down"/>
+        </FrameLayout>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom"
+        android:enabled="false"
+        android:theme="@style/AquaMarineButton"
+        android:background="@drawable/selector_button_enabled_4"
+        android:stateListAnimator="@null"
+        android:fontFamily="@font/notosans_medium"
+        android:text="다음" />
+
+</RelativeLayout>

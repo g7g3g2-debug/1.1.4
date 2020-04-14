@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">smap</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_settings">Settings</string>
+    <!--<![CDATA[<]]>SMAP<![CDATA[>]]>-->
+    <string name="term"><![CDATA[<]]>SMAP<![CDATA[>]]>(은)는 개인정보 보호법 제30조에 따라 정보주체(고객)의 개인정보를 보호하고 이와 관련한\n
+고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리지침을 수립․공개합니다.\n\n
+
+개인정보의 처리목적\n
+<![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.\n
+- 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본인 식별.인증, 회원자격 유지.관리, 등\n\n
+
+2. 개인정보의 처리 및 보유기간\n
+① <![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유․이용기간 또는 법령에 따른\n
+개인정보 보유․이용기간 내에서 개인정보를 처리․보유합니다.\n
+② 구체적인 개인정보 처리 및 보유 기간은 다음과 같습니다.\n
+고객 가입 및 관리 : 서비스 이용계약 또는 회원가입 해지 시 까지\n\n
+
+3. 개인정보의 제3자 제공\n
+<![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 정보주체의 별도 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조에 해당하는 경우 외에는\n
+개인정보를 제3자에게 제공하지 않습니다.\n\n
+
+4. 개인정보처리의 위탁\n
+① <![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 외부에 위탁하고 있습니다.\n
+- A/S 센터 운영\n
+․위탁 받는 자 (수탁자) : 주식회사 콩테크\n
+․위탁하는 업무의 내용 : 프로그램 개발 및 관리\n
+② <![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 위탁계약 체결 시 개인정보 보호법 제25조에 따라 위탁업무 수행목적 외 개인정보 처리\n
+금지, 재 위탁 제한, 수탁자에 대한 관리․감독, 책임에 관한 사항을 문서에 명시하고, 수탁자가 개인정보를 안전\n
+하게 처리하는지를 감독하고 있습니다.\n\n
+
+5. 정보주체의 권리․의무 및 행사방법\n
+정보주체는 <![CDATA[<]]>SMAP<![CDATA[>]]>에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.\n
+1. 개인정보 열람요구\n
+2. 오류 등이 있을 경우 정정 요구\n
+3. 삭제요구\n
+4. 처리정지 요구\n\n
+
+6. 처리하는 개인정보 항목\n
+<![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 다음의 개인정보 항목을 처리하고 있습니다.\n
+- 성명, 생년월일, 주소, 전화번호, 휴대전화번호, 성별\n\n
+
+7. 개인정보의 파기\n
+① <![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이\n
+해당 개인정보를 파기합니다.\n
+② <![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 다음의 방법으로 개인정보를 파기합니다.\n
+- 전자적 파일 : 파일 삭제, 디스크 포맷\n
+- 종이 문서 : 분쇄하거나 소각\n\n
+
+8. 개인정보의 안전성 확보조치\n
+<![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.\n
+- 관리적 조치 : 내부관리계획 수립․시행, 직원․종업원 등에 대한 정기적 교육\n
+- 기술적 조치 : 개인정보처리시스템(또는 개인정보가 저장된 컴퓨터)의 비밀번호 설정 등 접근권한 관리, 백신\n
+- 소프트웨어 등 보안프로그램 설치, 개인정보가 저장된 파일의 암호화\n
+- 물리적 조치 : 개인정보가 저장․보관된 장소의 시건, 출입통제 등\n\n
+
+9. 개인정보 보호책임자\n
+<![CDATA[<]]>SMAP<![CDATA[>]]>은(는) 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및\n
+피해구제를 처리하기 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.\n
+▶ 개인정보 보호책임자 (사업주 또는 대표자)\n
+성명 : 변무식\n
+직책 : 팀장\n
+연락처 : 02-400-7696\n\n
+
+10. 개인정보 처리방침 변경 이 개인정보 처리방침은 2017. 04. 01 부터 적용됩니다.</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_start">StartActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_find_apart">단지 선택</string>
+    <string name="title_activity_rtsetting">RTSettingActivity</string>
+    <string name="title_activity_parking_setting_first">선호 주차 구역 선택 (1/2)</string>
+    <string name="title_activity_parking_setting_second">선호 주차 구역 선택 (2/2)</string>
+    <string name="title_activity_nfc">NfcActivity</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kongtech.lutech.apartment"
+    android:installLocation="internalOnly">
+    <!-- 서버와 통신하기 위해 사용 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 블루투스 기능을 사용하기 위해 사용 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- REBOOT가 된 이벤트를 받아서 Service를 다시 실행 시키기 위해 사용 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" /> <!-- Background Service가 실행중인지 확인하기 위해사용 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" /> <!-- Background에서 Beacon이 스캔이 되어서 앱을 키겠습니까? 화면이 나올때 화면이 켜지게 하기 위해사용 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:name="com.kong.lutech.apartment.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Firebase Messaging Services -->
+        <service android:name="com.kong.lutech.apartment.firebase.FirebasePushInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.kong.lutech.apartment.firebase.FirebasePushMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Services & Receiver -->
+        <receiver
+            android:name="com.kong.lutech.apartment.services.RestartServiceReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver> <!-- Activities -->
+        <activity
+            android:name="com.kong.lutech.apartment.ui.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kong.lutech.apartment.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kong.lutech.apartment.ui.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".ui.StartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kong.lutech.apartment.ui.TermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.parking.detail.ParkingDetailActivity"
+            android:parentActivityName="com.kong.lutech.apartment.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.notice.detail.NoticeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.PushActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.FindApartActivity"
+            android:label="@string/title_activity_find_apart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- android:launchMode="singleTask" -->
+
+        <activity
+            android:name="com.kong.lutech.apartment.ui.NfcActivity"
+            android:label="@string/title_activity_nfc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name="com.kong.lutech.apartment.ui.TranslucentSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.parking.setting.ParkingSettingFirstActivity"
+            android:label="@string/title_activity_parking_setting_first"
+            android:parentActivityName="com.kong.lutech.apartment.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kong.lutech.apartment.ui.parking.setting.ParkingSettingSecondActivity"
+            android:label="@string/title_activity_parking_setting_second"
+            android:parentActivityName="com.kong.lutech.apartment.ui.parking.setting.ParkingSettingFirstActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

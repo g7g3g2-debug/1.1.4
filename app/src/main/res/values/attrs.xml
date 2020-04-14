@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecyclerItemView">
+        <attr name="content" format="reference|string"/>
+        <attr name="date" format="reference|string"/>
+        <attr name="sub" format="reference|string"/>
+        <attr name="onIcon" format="integer"/>
+        <attr name="offIcon" format="integer"/>
+        <attr name="enabled" format="boolean"/>
+    </declare-styleable>
+</resources>

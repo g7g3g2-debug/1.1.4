@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kongtech.smapsdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application>
+        <service
+            android:name="com.kongtech.smapsdk.services.PersistentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.kongtech.smapsdk.activities.TranslucentSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent" />
+    </application>
+
+</manifest>

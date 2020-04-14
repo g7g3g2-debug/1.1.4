@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#111e29</color>
+    <color name="colorPrimaryDark">#0D1720</color>
+    <color name="colorAccent">#40cbe0</color>
+    <color name="colorDisabled">#d8d8d8</color>
+    <color name="background">#f0f1f5</color>
+    <color name="warm_grey">#787878</color>
+    <color name="black_20">#33000000</color>
+    <color name="dark_sky_blue">#459ee3</color>
+    <color name="dark">#283a46</color>
+    <color name="greenish_teal">#33cf87</color>
+    <color name="silver">#c9ccd6</color>
+    <color name="pinkish_grey">#c8c8c8</color>
+
+    <color name="parking_gray1">#41515b</color>
+    <color name="parking_gray2">#5c6b76</color>
+    <color name="parking_gray3">#93a2a9</color>
+
+    <color name="primaryText">#293744</color>
+    <color name="secondaryText">#384d5a</color>
+
+    <color name="radioButtonText">#1d252d</color>
+    <color name="radioButtonStrokeOff">#c1c6c8</color>
+    <color name="radioButtonStrokeOn">#90a3aa</color>
+</resources>

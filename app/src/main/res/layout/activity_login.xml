@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-16dp"
+                    android:layout_marginStart="-16dp"
+                    android:fontFamily="@font/notosans_medium"
+                    android:gravity="left|center"
+                    android:text="로그인"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.kongtech.lutech.apartment.com.kong.lutech.apartment.ui.LoginActivity">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp">
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinnerDong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner_login_background"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight='8dp'
+                    android:layout_gravity="right|center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_down"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinnerHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner_login_background"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight='8dp'
+                    android:layout_gravity="right|center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_down"/>
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/etAuthcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:background="@drawable/edittext_login_background"
+                android:hint="인증번호를 입력해 주세요."
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/black_20"
+                android:textCursorDrawable="@null"
+                android:fontFamily="@font/notosans_regular"
+                android:textSize="16dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="101dp"
+                    android:layout_height="139dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_empty_bg" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:theme="@style/AquaMarineButton"
+                android:background="@drawable/drawable_button_accent_4"
+                android:stateListAnimator="@null"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/notosans_regular"
+                android:text="로그인" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

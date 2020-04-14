@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kongtech.lutech.apartment.ui.setting.scan_setting.ScanSettingActivity">
+    <item
+        android:id="@+id/action_success"
+        android:orderInCategory="100"
+        android:title="저장"
+        app:showAsAction="always" />
+</menu>

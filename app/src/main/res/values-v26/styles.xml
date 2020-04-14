@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AquaMarineButton" parent="Theme.AppCompat.Light">
+        <item name="android:foreground">@drawable/button_rounded_corner_4</item>
+
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

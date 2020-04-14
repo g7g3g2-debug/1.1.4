@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_findapart_llContainer"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginBottom="1dp"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/item_findapart_tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="16dp"
+        android:textColor="#384d5a"
+        android:textSize="16sp"
+        android:fontFamily="@font/notosans_medium"
+        android:text="아파트 이름"/>
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="13dp"
+        android:src="@drawable/arrow_right"/>
+
+</LinearLayout>
